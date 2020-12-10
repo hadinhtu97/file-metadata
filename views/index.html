@@ -12,7 +12,13 @@
     <h1>File Metadata</h1>
     <hr>
     <form action="api/fileanalyse" method="POST" enctype="multipart/form-data">
+        <p>Single file</p>
         <input type="file" name="upfile"> <br>
+        <input type="submit" value="Upload">
+    </form>
+    <form action="api/filesanalyse" method="POST" enctype="multipart/form-data">
+        <p>Multiple file</p>
+        <input type="file" name="upfiles" multiple> <br>
         <input type="submit" value="Upload">
     </form>
 </body>
