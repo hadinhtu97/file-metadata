@@ -1,3 +1,31 @@
 body {
     text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 50px 0;
+    font-size: 40px;
+    color: #dd4814;
+}
+
+hr {
+    width: 70%;
+}
+
+form {
+    margin: 50px auto;
+    padding: 30px 0;
+    border: 1px solid #5e0080;
+    width: 50%
+}
+
+input {
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    background-color: white;
+    outline: none;
+    border: 1px solid #5e0080;
 }
