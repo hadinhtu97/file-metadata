@@ -1,0 +1,17 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "cors": "^2.8.0",
+    "body-parser": "^1.19.0"
+  },
+  "author": "Tu Ha Dinh",
+  "license": "ISC"
+}
