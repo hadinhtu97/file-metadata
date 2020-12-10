@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => res.sendFile(__dirname + "/views/index.html"));
 app.use(express.static(__dirname + "/public"));
 
-app.post('/api/file', upload.single('upfile'), (req, res) => {
+app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
   if (req.file === undefined) {
     res.json("No file is selected!")
   } else {
