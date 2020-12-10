@@ -25,6 +25,20 @@ app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
   }
 })
 
+app.post('/api/filesanalyse', upload.array('upfiles'), (req, res) => {
+  if (req.files.length == 0) {
+    res.json("No file is selected!")
+  } else {
+    res.json(req.files.map(file => {
+      return {
+        name: file.originalname,
+        type: file.mimetype,
+        size: file.size
+      }
+    }))
+  }
+})
+
 app.listen(port, () => {
   console.log('Your app is listening on port ' + port);
 })
