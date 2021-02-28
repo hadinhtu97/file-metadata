@@ -1,7 +1,12 @@
 # File Metadata
 
-You can submit a form that includes a file upload.
+## Description
+Show information of uploaded files
 
-The form file input field has the name attribute set to upfile.
-
-When you submit a file, you receive the file name, type, and size in bytes within the JSON response.
+## Use
+```
+git clone https://github.com/hadinhtu97/file-metadata
+cd file-metadata
+npm install
+npm run start
+```
